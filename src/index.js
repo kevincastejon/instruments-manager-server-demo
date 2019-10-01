@@ -27,12 +27,12 @@ app.use('/users', routes.users);
 connectDb().then(async () => {
   const baseUsers = [
     new models.User({
-      username: 'Admin User',
+      username: 'Administrateur',
       password: process.env.ADMINPWD,
       admin: true,
     }),
     new models.User({
-      username: 'Regular User',
+      username: 'Utilisateur',
       password: process.env.ADMINPWD,
       admin: false,
     }),
