@@ -92,7 +92,7 @@ connectDb().then(async () => {
     });
   };
 
-  feedDB();
+  emptyDB();
 
   setInterval(() => {
     emptyDB();
